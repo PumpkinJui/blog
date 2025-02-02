@@ -67,3 +67,5 @@ extra_javascript:
     defer: true
   - path: scripts/mathjax.js
     defer: true
+  - path: scripts/eruda.js
+    async: true
