@@ -68,6 +68,9 @@ markdown_extensions:
   - mdx_truly_sane_lists
 plugins:
   - search
+  - blog:
+      blog_toc: true
+      post_excerpt: required
   - offline
   - privacy:
       enabled: !ENV [CI, false]
