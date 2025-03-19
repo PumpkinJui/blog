@@ -1,33 +1,48 @@
+---
 site_name: PumpkinJui’s Blog
 site_author: PumpkinJui
+site_url: https://pumpkinjui.pages.dev
 copyright: Copyright (c) 2025 PumpkinJui
 repo_url: https://github.com/PumpkinJui/blog/
-
 theme:
   name: material
   features:
+    - content.code.annotate
+    - content.code.copy
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.indexes
+    - navigation.prune
+    - navigation.top
     - search.highlight
+    - search.share
     - search.suggest
-
+    - toc.follow
+  font:
+    code: Fira Code
 markdown_extensions:
   - footnotes
   - md_in_html
-  - smarty
   - tables
   - toc:
       permalink: true
-      separator: _
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
-      smart_enable: asterisk
+      smart_enable: all
   - pymdownx.blocks.admonition
   - pymdownx.blocks.details
-  - pymdownx.blocks.tab
+  - pymdownx.blocks.tab:
+      alternate_style: true
   - pymdownx.caret
   - pymdownx.fancylists
   - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
       linenums: true
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
   - pymdownx.keys:
       camel_case: true
   - pymdownx.magiclink:
@@ -39,6 +54,7 @@ markdown_extensions:
   - pymdownx.progressbar
   - pymdownx.saneheaders
   - pymdownx.smartsymbols
+  - pymdownx.snippets
   - pymdownx.superfences:
       disable_indented_code_blocks: true
       preserve_tabs: true
@@ -46,23 +62,19 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tasklist
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tilde
   - mdx_truly_sane_lists
-
 plugins:
   - search
   - offline
+  - privacy:
+      enabled: !ENV [CI, false]
   - git-revision-date-localized:
+      enable_creation_date: true
       fallback_to_build_date: true
-
-extra_css:
-  - scripts/fonts.css
-
 extra_javascript:
-  - path: https://cdn.jsdmirror.com/npm/mermaid@latest/dist/mermaid.esm.min.mjs
-    type: module
-    async: true
   - path: https://cdn.jsdmirror.com/npm/mathjax@3/es5/tex-chtml-full.js
     defer: true
   - path: scripts/mathjax.js
