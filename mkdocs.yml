@@ -9,6 +9,7 @@ theme:
   features:
     - content.code.annotate
     - content.code.copy
+    - content.tabs.link
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
@@ -21,6 +22,7 @@ theme:
     - toc.follow
   font:
     code: Fira Code
+  language: zh
 markdown_extensions:
   - footnotes
   - md_in_html
@@ -29,12 +31,14 @@ markdown_extensions:
       permalink: true
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.betterem:
-      smart_enable: all
+  - pymdownx.betterem
   - pymdownx.blocks.admonition
   - pymdownx.blocks.details
   - pymdownx.blocks.tab:
       alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.caret
   - pymdownx.fancylists
   - pymdownx.highlight:
@@ -77,6 +81,14 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
+  - rss:
+      enabled: !ENV [CI, false]
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
 extra_javascript:
   - path: https://cdn.jsdmirror.com/npm/mathjax@3/es5/tex-chtml-full.js
     defer: true
