@@ -5,3 +5,4 @@ pygments
 mdx_truly_sane_lists
 mkdocs-git-revision-date-localized-plugin
 mkdocs-rss-plugin
+tzdata
