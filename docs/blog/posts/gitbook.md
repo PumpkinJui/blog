@@ -5,6 +5,7 @@ date:
 categories:
   - gitbook
 archive: true
+slug: how-to-gitbook
 ---
 # 如何配置 GitBook-cli 环境
 
