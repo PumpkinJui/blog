@@ -2,10 +2,12 @@
 date:
   created: 2024-08-10T18:47:57
   updated: 2025-03-21
-categories:
-  - gitbook
 archive: true
 slug: how-to-gitbook
+categories:
+  - 技术
+tags:
+  - gitbook
 ---
 # 如何配置 GitBook-cli 环境
 

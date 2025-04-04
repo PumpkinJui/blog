@@ -1,5 +1,6 @@
 mkdocs
 mkdocs-material
+mkdocs-material[imaging]
 pymdown-extensions
 pygments
 mdx_truly_sane_lists

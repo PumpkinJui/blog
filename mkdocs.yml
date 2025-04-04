@@ -39,6 +39,7 @@ theme:
         icon: material/brightness-4
         name: 切换到自动模式
 markdown_extensions:
+  - attr_list
   - footnotes
   - md_in_html
   - tables
@@ -55,6 +56,9 @@ markdown_extensions:
         kwds:
           case: lower
   - pymdownx.caret
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.fancylists
   - pymdownx.highlight:
       anchor_linenums: true
@@ -93,6 +97,11 @@ plugins:
   - offline
   - privacy:
       enabled: !ENV [CI, false]
+  - social:
+      enabled: !ENV [CI, false]
+      cards_layout_options:
+        font_family: Source Sans 3
+  - tags
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
@@ -104,6 +113,7 @@ plugins:
         as_update: date.updated
       categories:
         - categories
+        - tags
 extra_javascript:
   - path: https://cdn.jsdmirror.com/npm/mathjax@3/es5/tex-chtml-full.js
     defer: true
