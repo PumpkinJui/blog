@@ -3,17 +3,15 @@ date:
   created: 2025-03-22
   updated: 2025-04-05
 archive: true
-slug: pages_fetching_solution
+slug: pages_fetch_depth
 categories:
   - 技术
 tags:
-  - gitbook
-  - mkdocs
-  - docusaurus
+  - Pages
 ---
-# 如何使 CloudFlare Pages 显示文档的创建和修改时间
+# 如何使 Cloudflare Pages 显示文档的创建和修改时间
 
-CloudFlare Pages 有一个问题，就是没有设定 fetch 深度的选项。默认只会到最新一次提交，于是所有时间都变成了构建当天的日期。
+Cloudflare Pages 有一个问题，就是没有设定 fetch 深度的选项。默认只会到最新一次提交，于是所有时间都变成了构建当天的日期。
 
 光是时间不对也就算了。MkDocs 的 RSS 插件甚至还会报错 `#!python IndexError`！
 

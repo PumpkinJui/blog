@@ -7,7 +7,8 @@ slug: how_to_gitbook
 categories:
   - 技术
 tags:
-  - gitbook
+  - GitBook
+  - Pages
 ---
 # 如何配置 GitBook-cli 环境
 

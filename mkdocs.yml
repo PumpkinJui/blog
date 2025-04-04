@@ -22,6 +22,10 @@ theme:
     - toc.follow
   font:
     code: Fira Code
+  icon:
+    tag:
+      gitbook: simple/gitbook
+      pages: simple/cloudflarepages
   language: zh
   palette:
     - media: "(prefers-color-scheme)"
@@ -115,6 +119,10 @@ plugins:
       categories:
         - categories
         - tags
+extra:
+  tags:
+    GitBook: gitbook
+    Pages: pages
 extra_javascript:
   - path: https://cdn.jsdmirror.com/npm/mathjax@3/es5/tex-chtml-full.js
     defer: true
