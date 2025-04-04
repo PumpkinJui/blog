@@ -94,6 +94,7 @@ plugins:
   - blog:
       blog_toc: true
       post_excerpt: required
+      post_slugify_separator: _
   - offline
   - privacy:
       enabled: !ENV [CI, false]
