@@ -123,10 +123,3 @@ extra:
   tags:
     GitBook: gitbook
     Pages: pages
-extra_javascript:
-  - path: https://cdn.jsdmirror.com/npm/mathjax@3/es5/tex-chtml-full.js
-    defer: true
-  - path: scripts/mathjax.js
-    defer: true
-  - path: scripts/eruda.js
-    async: true
