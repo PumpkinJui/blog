@@ -24,8 +24,11 @@ theme:
     code: Fira Code
   icon:
     tag:
+      ai: material/robot
       gitbook: simple/gitbook
       pages: simple/cloudflarepages
+      relations: material/account-multiple
+      music: material/music
   language: zh
   palette:
     - media: "(prefers-color-scheme)"
@@ -97,6 +100,10 @@ plugins:
   - search
   - blog:
       blog_toc: true
+      categories_allowed:
+        - 随感集
+        - 技术
+        - 习作
       post_excerpt: required
       post_slugify_separator: _
   - offline
@@ -121,5 +128,8 @@ plugins:
         - tags
 extra:
   tags:
+    AI: ai
     GitBook: gitbook
     Pages: pages
+    人际: relations
+    音乐: music
