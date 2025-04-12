@@ -26,7 +26,9 @@ theme:
     tag:
       ai: material/robot
       gitbook: simple/gitbook
+      mc: material/minecraft
       pages: simple/cloudflarepages
+      pushu: material/pine-tree
       relations: material/account-multiple
       music: material/music
   language: zh
@@ -104,7 +106,10 @@ plugins:
         - 随感集
         - 技术
         - 学习
+        - 生活
+        - 游戏
       post_excerpt: required
+      post_readtime: false
       post_slugify_separator: _
   - offline
   - privacy:
@@ -130,6 +135,8 @@ extra:
   tags:
     AI: ai
     GitBook: gitbook
+    Minecraft: mc
     Pages: pages
+    朴树: pushu
     人际: relations
     音乐: music
