@@ -103,7 +103,7 @@ plugins:
       categories_allowed:
         - 随感集
         - 技术
-        - 习作
+        - 学习
       post_excerpt: required
       post_slugify_separator: _
   - offline
