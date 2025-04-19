@@ -14,7 +14,7 @@ tags:
 
 /// note | 文档历史说明
 
-本文档最早位于[群文档](https://groupdocs.pages.dev/)，于 https://github.com/PumpkinJui/groupdocs/commit/2ba4aaa9a36afc288aaf6bfae1559b2551298087 添加，作为编写参考。后因群文档迁移至 [Docusaurus](https://docusaurus.io/) 而失去其原有作用，特此于 https://github.com/PumpkinJui/groupdocs/commit/d1d1b43c85600911263a945fa838b4742e744f0b 迁出。
+本文档最早位于[群文档](https://groupdocs.pages.dev/)，于 <https://github.com/PumpkinJui/groupdocs/commit/2ba4aaa9a36afc288aaf6bfae1559b2551298087> 添加，作为编写参考。后因群文档迁移至 [Docusaurus](https://docusaurus.io/) 而失去其原有作用，特此于 <https://github.com/PumpkinJui/groupdocs/commit/d1d1b43c85600911263a945fa838b4742e744f0b> 迁出。
 
 迁出后，本文档进行了 MkDocs 适配，并对一些问题进行更新。感谢 @鸽子 对此次更新的贡献。
 
@@ -32,7 +32,7 @@ GitBook-cli 是 CloudFlare Pages 构建时可以选择使用的框架之一。�
 
 后来，群文档将 GitBook-cli 使用的 [Markdown 语法](https://github.com/GitbookIO/gitbook/blob/legacy/docs/syntax/markdown.md)作为归档类文件添加，以期有所改善。但查看文档 (甚至是全英的文档)，怎么能比得上自己用相同的框架打包一次来得快、准确和可靠呢？
 
-因此，作为 https://github.com/PumpkinJui/groupdocs/issues/21 的解决方案，我们将在本文中指导您如何安装 GitBook-cli，及如何利用它进行测试。
+因此，作为 <https://github.com/PumpkinJui/groupdocs/issues/21> 的解决方案，我们将在本文中指导您如何安装 GitBook-cli，及如何利用它进行测试。
 
 在下文中，我们就分别在 Termux 平台和 Windows 平台指导您安装它。
 
