@@ -28,6 +28,7 @@ theme:
       gitbook: simple/gitbook
       mc: material/minecraft
       pages: simple/cloudflarepages
+      py: simple/python
       pushu: material/pine-tree
       relations: material/account-multiple
       music: material/music
@@ -137,6 +138,7 @@ extra:
     GitBook: gitbook
     Minecraft: mc
     Pages: pages
+    Python: py
     朴树: pushu
     人际: relations
     音乐: music
