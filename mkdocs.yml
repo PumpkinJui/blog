@@ -106,8 +106,9 @@ plugins:
       categories_allowed:
         - 随感集
         - 技术
-        - 学习
         - 生活
+        - 心理
+        - 学习
         - 游戏
       post_excerpt: required
       post_readtime: false
