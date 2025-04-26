@@ -19,7 +19,7 @@ Cloudflare Pages 有一个问题，就是没有设定 fetch 深度的选项。�
 
 <!-- more -->
 
-[Cloudflare Pages fetch-depth](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin/issues/123#issuecomment-2513449963) 这里面说，
+*[Cloudflare Pages fetch-depth](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin/issues/123#issuecomment-2513449963)* 这里面说，
 
 > My solution was to add `#!bash git fetch --unshallow` to the build command under build configuration on Cloudflare pages. So my full build command is `#!bash git fetch --unshallow && mkdocs build`.
 

@@ -19,7 +19,7 @@ Access Policy 这个功能又容易一不小心打开，又难关掉。想要在
 
 <!-- more -->
 
-[How can I disable the Access policy of Cloudflare Pages?](https://community.cloudflare.com/t/how-can-i-disable-the-access-policy-of-cloudflare-pages/292358/11) 用 API 解决了这个问题。
+*[How can I disable the Access policy of Cloudflare Pages?](https://community.cloudflare.com/t/how-can-i-disable-the-access-policy-of-cloudflare-pages/292358/11)* 用 API 解决了这个问题。
 
 首先，需要确定几个参数。按 Python 的 f-string 风格，后文我使用 `{}` 引用这些参数。
 

@@ -133,7 +133,7 @@ TypeError: cb.apply is not a function
 
 我们将用一行代码和三步操作解决这个问题。
 
-> 解决方案原文：[gitbook 出现 TypeError: cb.apply is not a function 解决办法](https://www.cnblogs.com/cyxroot/p/13754475.html)
+> 解决方案原文：《[gitbook 出现 TypeError: cb.apply is not a function 解决办法](https://www.cnblogs.com/cyxroot/p/13754475.html)》
 
 1. `#!bash nano /data/data/com.termux/files/usr/lib/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js`，回车。  
    可以复制上面的代码；或输入 `nano` 加空格后，直接把报错信息里面的路径复制进去 (注意别把行号也加进去)。  
@@ -164,7 +164,7 @@ TypeError: cb.apply is not a function
 
 我们将用三步操作解决这个问题。
 
-> 解决方案原文：[gitbook 出现 TypeError: cb.apply is not a function 解决办法](https://www.cnblogs.com/cyxroot/p/13754475.html)
+> 解决方案原文：《[gitbook 出现 TypeError: cb.apply is not a function 解决办法](https://www.cnblogs.com/cyxroot/p/13754475.html)》
 
 1. 复制报错文件的路径，打开报错的文件。（不推荐自行翻找文件夹，有些文件夹可能被隐藏了，另外很容易找错。）
 2. 搜索 `statFix`。  

@@ -5,12 +5,13 @@ date:
 archive: true
 slug: a_minecraft_movie
 categories:
+  - 评 & 感
   - 生活
   - 游戏
 tags:
   - Minecraft
 ---
-# 《我的世界大电影》影评
+# 评《我的世界大电影》
 
 和一云一起去看了《[我的世界大电影](https://zh.minecraft.wiki/w/A_Minecraft_Movie)》。在影院从头笑到尾，出了影院开始正经反思。
 
@@ -18,11 +19,11 @@ tags:
 中庸，不能说它砸招牌，但也肯定谈不上拍案叫绝。如果想开心一下或者为了情怀，我也推荐去看，别被评分吓跑了；但如果想得到一些更深刻的东西，恐怕是会失望。  
 另外，如果你会替别人尴尬，你可能会不太舒服。
 
-截至观影结束，[IMDb](https://www.imdb.com/title/tt3566834/) 评分为 6.1，[豆瓣电影](https://movie.douban.com/subject/26149750/)评分为 5.8。截至撰稿结束，评分又分别下降了 0.1。
+截至观影结束，[IMDb](https://www.imdb.com/title/tt3566834/) 评分为 6.1，[豆瓣电影](https://movie.douban.com/subject/26149750/)评分为 5.8。截至撰稿结束（250413），评分又分别下降了 0.1。
 
 /// warning | 剧透警告
 
-剧透警告！建议在观看影片后再进行阅读。
+剧透警告！建议在观看影片后再阅读本文。
 
 但也只是一个建议，可以选择不听。
 
@@ -101,7 +102,7 @@ tags:
 >
 > 史蒂夫的熔岩烤鸡 耶 好吃到跺 jiojio
 >
-> [Steve’s Lava Chicken](https://music.163.com/#/song?id=2688132661)（翻译作了修改）
+> ——*[Steve’s Lava Chicken](https://music.163.com/#/song?id=2688132661)*（翻译作了修改）
 
 从头笑到尾。真还挺有意思的。
 
