@@ -256,7 +256,7 @@ tags:
 
 #### 人物形象
 
-> Bravery. Justice. Integrity. Kindness. Perseverance. Patience. Using these, you were able to win at 「Ball Game.」
+> Bravery. Justice. Integrity. Kindness. Perseverance. Patience. Using these, you were able to win at “Ball Game.”
 >
 > ——[Ball Game](https://undertale.fandom.com/wiki/Snowdin/Puzzles#Ball_Game)
 
