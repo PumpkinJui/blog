@@ -184,7 +184,7 @@ TypeError: cb.apply is not a function
 
 > 请注意，***不要用 Word 和 Windows 自带的记事本***。Word 保存的不是纯文本文件，而记事本会自作聪明地在文件开始的地方加上几个特殊字符，结果会导致程序运行出现莫名其妙的错误。
 >
-> ——廖雪峰的 [Git](https://liaoxuefeng.com/books/git/create-repo/) 和 [Python](https://liaoxuefeng.com/books/python/first-program/text-editor/) 教程
+> ⸺廖雪峰的 [Git](https://liaoxuefeng.com/books/git/create-repo/) 和 [Python](https://liaoxuefeng.com/books/python/first-program/text-editor/) 教程
 
 ///
 ///

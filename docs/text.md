@@ -13,4 +13,4 @@
 
 > 此后如竟没有炬火：我便是唯一的光。
 >
-> ——鲁迅《[热风·四十一](http://www.luxunmuseum.com.cn/cx/content.php?id=1439)》
+> ⸺鲁迅《[热风·四十一](http://www.luxunmuseum.com.cn/cx/content.php?id=1439)》
