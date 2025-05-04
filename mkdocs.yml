@@ -48,6 +48,12 @@ theme:
       toggle:
         icon: material/brightness-4
         name: 切换到自动模式
+nav:
+  - index.md
+  - Blog:
+    - blog/index.md
+  - text.md
+  - about.md
 markdown_extensions:
   - attr_list
   - footnotes
