@@ -2,7 +2,7 @@
 site_name: PumpkinJui’s Blog
 site_author: PumpkinJui
 site_url: https://pumpkinjui.pages.dev
-copyright: Copyright (c) 2025 PumpkinJui
+copyright: Copyright &copy; 2025 PumpkinJui
 repo_url: https://github.com/PumpkinJui/blog/
 theme:
   name: material
@@ -10,6 +10,8 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
+    - header.autohide
+    - navigation.footer
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
@@ -107,6 +109,7 @@ markdown_extensions:
   - mdx_truly_sane_lists
 plugins:
   - search
+  - meta
   - blog:
       blog_toc: true
       categories_allowed:
@@ -117,6 +120,7 @@ plugins:
         - 心理
         - 学习
         - 游戏
+      draft_if_future_date: true
       post_excerpt: required
       post_readtime: false
       post_slugify_separator: _
@@ -129,6 +133,7 @@ plugins:
         font_family: Source Sans 3
   - tags
   - git-revision-date-localized:
+      enabled: !ENV [CI, false]
       enable_creation_date: true
       fallback_to_build_date: true
   - rss:

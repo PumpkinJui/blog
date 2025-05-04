@@ -2,7 +2,6 @@
 date:
   created: 2024-08-10T18:47:57
   updated: 2025-03-21
-archive: true
 slug: how_to_gitbook
 categories:
   - 技术

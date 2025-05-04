@@ -2,7 +2,6 @@
 date:
   created: 2025-03-22
   updated: 2025-04-05
-archive: true
 slug: pages_fetch_depth
 categories:
   - 技术

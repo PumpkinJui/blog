@@ -2,7 +2,6 @@
 date:
   created: 2025-03-29
   updated: 2025-04-05
-archive: true
 slug: pages_access_policy
 categories:
   - 技术

@@ -2,7 +2,6 @@
 date:
   created: 2025-04-06
   updated: 2025-05-04
-archive: true
 slug: a_minecraft_movie
 categories:
   - 评 & 感
