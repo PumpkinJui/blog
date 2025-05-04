@@ -7,6 +7,5 @@
 [![Repo Size](https://img.shields.io/github/repo-size/PumpkinJui/blog?style=for-the-badge&logo=git&logoColor=white&color=yellow)](https://github.com/PumpkinJui/blog)
 [![Commit Activity](https://img.shields.io/github/commit-activity/t/PumpkinJui/blog?style=for-the-badge&color=yellow)](https://github.com/PumpkinJui/blog/graphs/commit-activity)
 
-[![RSS Feed](https://img.shields.io/badge/RSS_Feed-FFA500?style=for-the-badge&logo=rss&logoColor=white)](https://pumpkinjui.pages.dev/feed_rss_updated.xml)
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 [![Deployed with Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-F38020?style=for-the-badge&logo=cloudflarepages&logoColor=white)](https://pages.cloudflare.com/)

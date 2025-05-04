@@ -146,6 +146,16 @@ plugins:
         - categories
         - tags
 extra:
+  social:
+    - icon: material/rss
+      link: https://pumpkinjui.pages.dev/feed_rss_updated.xml
+      name: RSS Feed
+    - icon: material/github
+      link: https://github.com/PumpkinJui
+      name: GitHub
+    - icon: material/email-outline
+      link: mailto:blog@pumpkinjui.aleeas.com
+      name: Email
   tags:
     AI: ai
     GitBook: gitbook
