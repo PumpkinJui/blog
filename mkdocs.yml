@@ -133,9 +133,10 @@ plugins:
         font_family: Source Sans 3
   - tags
   - git-revision-date-localized:
-      enabled: !ENV [CI, false]
+      # enabled: !ENV [CI, false]
       enable_creation_date: true
       fallback_to_build_date: true
+      timezone: Asia/Shanghai
   - rss:
       enabled: !ENV [CI, false]
       match_path: blog/posts/.*
