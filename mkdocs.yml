@@ -130,7 +130,7 @@ plugins:
   - social:
       enabled: !ENV [CI, false]
       cards_layout_options:
-        font_family: Source Sans 3
+        font_family: Noto Sans SC
   - tags
   - git-revision-date-localized:
       # enabled: !ENV [CI, false]
