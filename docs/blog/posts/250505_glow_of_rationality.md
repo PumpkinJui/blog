@@ -2,7 +2,7 @@
 date:
   created: 2025-05-05
   updated: 2025-05-11
-slug: a_faint_glow
+slug: glow_of_rationality
 categories:
   - 学习
 tags:
