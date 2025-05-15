@@ -114,6 +114,7 @@ plugins:
       blog_toc: true
       categories_allowed:
         - 随感集
+        - 附中
         - 技术
         - 评 &amp; 感
         - 生活

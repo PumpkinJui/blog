@@ -3,6 +3,8 @@ date:
   created: 2024-10-30T22:11:24
   updated: 2025-05-15
 slug: earthquake
+categories:
+  - 附中
 ---
 # 关于本次地震致校领导的建议书
 
