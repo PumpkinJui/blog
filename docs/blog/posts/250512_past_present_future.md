@@ -4,6 +4,7 @@ date:
   updated: 2025-05-14
 slug: past_present_future
 categories:
+  - 附中
   - 学习
 links:
   - 教育的下一步: https://sspai.com/post/96120

@@ -120,7 +120,7 @@ Windows 的命令行有 cmd 和 PowerShell 两种，语法不尽相同。本文�
 
 报错信息应为：
 
-```shell-session
+``` shell-session
 /data/data/com.termux/files/usr/lib/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js:287
       if (cb) cb.apply(this, arguments)
                  ^
@@ -151,7 +151,7 @@ TypeError: cb.apply is not a function
 
 报错信息应为：
 
-```shell-session
+``` shell-session
 %APPDATA%\npm\node_modules\gitbook-cli\node_modules\npm\node_modules\graceful-fs\polyfills.js:287
       if (cb) cb.apply(this, arguments)
                  ^
@@ -197,7 +197,7 @@ TypeError: cb.apply is not a function
 
 /// tab | Termux
 
-```shell-session
+``` shell-session
 gitbook@3.2.3 ../usr/tmp/{tmp-xxxxxxxxxxxxxxxxx}/node_modules/gitbook
 ├── destroy@1.0.4
 ├── {若干依赖项……}
@@ -211,7 +211,7 @@ gitbook@3.2.3 ../usr/tmp/{tmp-xxxxxxxxxxxxxxxxx}/node_modules/gitbook
 /// tab | Windows
     select: True
 
-```shell-session
+``` shell-session
 gitbook@3.2.3 AppData\Local\Temp\{tmp-xxxxxxxxxxxxxxxx}\node_modules\gitbook
 ├── escape-html@1.0.3
 ├── {若干依赖项……}
@@ -253,7 +253,7 @@ gitbook@3.2.3 AppData\Local\Temp\{tmp-xxxxxxxxxxxxxxxx}\node_modules\gitbook
 
 运行 `#!bash gitbook serve`。将会提示：
 
-```shell-session
+``` shell-session
 $ gitbook serve
 Live reload server started on port: 35729
 Press CTRL+C to quit ...

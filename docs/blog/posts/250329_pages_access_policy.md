@@ -28,7 +28,7 @@ Access Policy 这个功能又容易一不小心打开，又难关掉。想要在
 
 然后，我们把上面这些东西都拼进下面这条命令中：
 
-```bash
+``` bash
 curl -X GET "https://api.cloudflare.com/client/v4/accounts/{account_string}/access/apps" \
      -H "X-Auth-Email: {email}" \
      -H "X-Auth-Key: {key}" \
@@ -39,7 +39,7 @@ curl -X GET "https://api.cloudflare.com/client/v4/accounts/{account_string}/acce
 
 然后再来拼下面这条命令：
 
-```bash
+``` bash
 curl -X DELETE "https://api.cloudflare.com/client/v4/accounts/{account_string}/access/apps/{id}" \
      -H "X-Auth-Email: {email}" \
      -H "X-Auth-Key: {key}" \

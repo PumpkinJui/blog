@@ -4,6 +4,7 @@ date:
   updated: 2025-05-11
 slug: glow_of_rationality
 categories:
+  - 附中
   - 学习
 tags:
   - AI
