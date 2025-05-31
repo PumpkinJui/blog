@@ -5,6 +5,6 @@ pymdown-extensions
 pygments
 mdx_truly_sane_lists
 mkdocs-git-revision-date-localized-plugin
-mkdocs-rss-plugin==1.17.1
+mkdocs-rss-plugin
 jieba
 tzdata
