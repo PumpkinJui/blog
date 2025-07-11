@@ -22,8 +22,6 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-  font:
-    code: Fira Code
   icon:
     tag:
       ai: material/robot
