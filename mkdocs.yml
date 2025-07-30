@@ -52,8 +52,9 @@ nav:
   - index.md
   - Blog:
     - blog/index.md
-  - text.md
-  - about.md
+  - 关于:
+    - about/index.md
+    - about/text.md
 markdown_extensions:
   - attr_list
   - footnotes
