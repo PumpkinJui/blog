@@ -1,8 +1,10 @@
 ---
-site_name: PumpkinJui’s Blog
+site_name: 楠瓜室
 site_author: PumpkinJui
-site_url: https://pumpkinjui.pages.dev
-copyright: Copyright &copy; 2025 PumpkinJui
+site_url: https://www.pumpkinjui.com/
+copyright: |
+  Copyright &copy; 2025 PumpkinJui
+  <br><a href="https://beian.miit.gov.cn/" target="_blank">蒙 ICP 备 2025029368 号 - 1</a>
 repo_url: https://github.com/PumpkinJui/blog/
 theme:
   name: material
