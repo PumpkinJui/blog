@@ -153,7 +153,7 @@ plugins:
 extra:
   social:
     - icon: material/rss
-      link: https://pumpkinjui.pages.dev/feed_rss_updated.xml
+      link: https://www.pumpkinjui.com/feed_rss_updated.xml
       name: RSS Feed
     - icon: material/github
       link: https://github.com/PumpkinJui
