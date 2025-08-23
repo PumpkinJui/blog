@@ -58,6 +58,7 @@ nav:
     - blog/index.md
   - 关于:
     - about/index.md
+    - about/history.md
     - about/text.md
 markdown_extensions:
   - attr_list
