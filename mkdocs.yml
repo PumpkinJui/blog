@@ -59,7 +59,7 @@ nav:
   - 关于:
     - about/index.md
     - about/history.md
-    - about/text.md
+    - about/slogan.md
 markdown_extensions:
   - attr_list
   - footnotes
