@@ -26,3 +26,4 @@
 - 08 月 23 日，`obdocs` 记录通过 EdgeOne 服务对 <https://github.com/PumpkinJui/obdocs> 的 Cloudflare Pages 站点进行加速访问。
 - 08 月 27 日，域名公安备案变更主体申请审核通过。
 - 09 月 25 日，域名萌 ICP 备案提交审核。
+- 09 月 27 日，域名萌 ICP 备案审核通过。
