@@ -15,6 +15,7 @@ theme:
   features:
     - content.code.annotate
     - content.code.copy
+    - content.footnote.tooltips
     - content.tabs.link
     - header.autohide
     - navigation.footer
