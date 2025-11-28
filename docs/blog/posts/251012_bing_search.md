@@ -30,7 +30,7 @@ categories:
 
 使用 uBlock Origin，在自定义静态规则中加入以下规则并保存：
 
-```plaintext
+``` plaintext
 bing.com^$removeparam=rdr
 bing.com^$removeparam=rdrig
 ```
