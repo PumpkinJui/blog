@@ -9,7 +9,7 @@
 - 03 月 20 日，blog 有了实际内容。
 - 03 月 22 日，blog 的第一篇博文《[如何配置 GitBook-cli 环境](../blog/posts/240810_how_to_gitbook.md)》被提交。
 - 04 月 05 日，blog 被命名为「PumpkinJui’s 自留地」。
-- 06 月 18 日，顶级域名 `pumpkinjui.com` 被注册。
+- 06 月 18 日，注册顶级域名 `pumpkinjui.com`，注册商为 DNSPod，期限为一年。
 - 06 月 21 日，Cloudflare Pages 站点被 CNAME 到 `cfp` 记录。
 - 07 月 16 日，blog 新名「楠瓜室」被潘振东提出。
 - 08 月 05 日，域名 ICP 备案以新名提交审核。
@@ -33,3 +33,4 @@
 - 01 月 05 日，`@` 记录先是从 EdgeOne 移除，改用显性 URL 记录进行重定向；然后发现更改后 `@` 记录只能通过 HTTP 访问，于是又恢复使用 EdgeOne 进行重定向。  
   同日，域名开启 HSTS，`max-age` 设定为 365 天，`includeSubDomains` 设定为开启，`preload` 设定为关闭。
 - 02 月 17 日，`gd` 试验站下线，相应记录被删除。
+- 05 月 18 日，注册顶级域名 `908878.xyz`，注册商为 Cloudflare，期限为九年。
