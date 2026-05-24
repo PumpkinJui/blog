@@ -4,7 +4,7 @@ date:
   updated: 2026-01-26
 slug: china_post
 categories:
-  - 生活
+  - 邮政
 links:
   - 知乎 - 现如今怎样寄信？: https://www.zhihu.com/question/330393975/answer/1633942631
   - 少数派 - 快节奏的生活里，何不试试慢递一张明信片: https://sspai.com/post/61845

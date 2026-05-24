@@ -129,6 +129,7 @@ plugins:
         - 心理
         - 学习
         - 游戏
+        - 邮政
       draft_if_future_date: true
       post_excerpt: required
       post_readtime: false
