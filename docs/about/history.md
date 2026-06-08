@@ -34,3 +34,5 @@
   同日，域名开启 HSTS，`max-age` 设定为 365 天，`includeSubDomains` 设定为开启，`preload` 设定为关闭。
 - 02 月 17 日，`gd` 试验站下线，相应记录被删除。
 - 05 月 18 日，注册顶级域名 `908878.xyz`，注册商为 Cloudflare，期限为九年。
+- 06 月 01 日，`pumpkinjui.com` 续费一年。
+- 06 月 08 日，开启 EdgeOne 全站缓存，节点缓存 TTL 为 30 天。
