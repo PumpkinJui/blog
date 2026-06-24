@@ -1,6 +1,6 @@
 ---
 date:
-  created: 2026-06-23
+  created: 2026-06-23T16:00:00
   updated: 2026-06-24
 slug: storage_cleaning
 categories:
