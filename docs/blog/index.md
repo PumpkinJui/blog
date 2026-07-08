@@ -4,6 +4,6 @@ hide:
 ---
 # Blog
 
-![Powered by Responsibility](https://forthebadge.com/images/badges/powered-by-responsibility.svg)
+[![Powered by Responsibility](https://forthebadge.com/badges/powered-by-responsibility.svg)](https://forthebadge.com/)
 
 ---

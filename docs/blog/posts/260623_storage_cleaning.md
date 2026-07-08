@@ -52,7 +52,7 @@ categories:
 
 杀毒的话，基本上[火绒](https://huorong.cn/)就够用了，可以拦截捆绑安装，以及它还带了一个可以禁用的软件商店。
 
-解压的话，[7-Zip](https://7-zip.org/) 是极简方案（[中文页面的官网](https://sparanoid.com/lab/7z/)，但可能有点显得简陋了。那样可以用 [Bandizip](https://www.bandisoft.com/bandizip/)，嫌广告又不想付费可以看[破解版](https://www.423down.com/9735.html)。  
+解压的话，[7-Zip](https://7-zip.org/) 是极简方案（[中文页面的官网](https://sparanoid.com/lab/7z/)），但可能有点显得简陋了。那样可以用 [Bandizip](https://www.bandisoft.com/bandizip/)，嫌广告又不想付费可以看[破解版](https://www.423down.com/9735.html)。  
 如果有压缩 RAR 的需求就没得选了，只能用 [RARLab](https://www.rarlab.com/) 的 [WinRAR](https://www.rarlab.com/)，还有[国内特供版](https://www.winrar.com.cn/)，区别在于国际版有弹窗提醒试用期（实际上可以一直试用），而国内版有弹窗广告。
 
 看图就 Windows 自带就够了，别整那些乱七八糟的。顺便说一句，百度网盘会[篡改](https://www.landian.news/archives/110368.html)这个。
