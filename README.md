@@ -14,5 +14,3 @@
 [![Last Commit](https://img.shields.io/github/last-commit/PumpkinJui/blog?display_timestamp=author&style=for-the-badge&color=yellow)](https://github.com/PumpkinJui/blog/commits/master/)
 
 [![Created by a Human](https://cadence.moe/static/img/created-by-a-human/created-by-a-human.svg)](https://cadence.moe/blog/2024-10-05-created-by-a-human-badges)
-[![0% Optimized](https://forthebadge.com/badges/0-percent-optimized.svg)](https://forthebadge.com/)
-[![Works On My Machine](https://forthebadge.com/badges/works-on-my-machine.svg)](https://forthebadge.com/)
