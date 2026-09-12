@@ -1,7 +1,7 @@
 ---
 date:
   created: 2026-08-31
-  updated: 2026-09-03
+  updated: 2026-09-12
 slug: termux_symlink_hardlink
 categories:
   - 技术
@@ -36,7 +36,7 @@ Excellent!
 >
 > ⸺[Termux Wiki](https://wiki.termux.dev/wiki/Python)
 
-与此同时，比起 pip，速度和便捷性更胜一筹的是 uv。uv 倒是能用 `#!bash pkg install uv` 直接安装（注意「倒是」），但 uv 引以为傲的虚拟环境也因为上面的问题用不了了，`#!bash uv run` 根本 run 不通。
+与此同时，比起 pip，速度和便捷性更胜一筹的是 uv。uv 能用 `#!bash pkg install uv` 直接安装，但 uv 引以为傲的虚拟环境也因为上面的问题用不了了，`#!bash uv run` 根本 run 不通。
 
 既然如此，把虚拟环境创建到 `~` 目录，使用时引用不就可以了吗？那我们就不得不享受一下 `#!bash source ~/.local/share/pyv/some_venv/bin/activate` 了。即使给 `~/.local/share/pyv` 创建一个环境变量叫 `#!bash $VENV`，也没有好多少，而且在使用环境变量以后，Tab 键自动补全会显著变慢。
 
@@ -48,7 +48,7 @@ Excellent!
 >
 > ⸺[uv 文档](https://docs.astral.sh/uv/concepts/projects/layout/#centralized-project-environments)
 
-也就是说，如果启用了这个预览功能，虚拟环境就会建立在 `#!bash $XDG_CACHE_HOME/uv` 内，然后可以回退到环境变量写入文件的操作，避免使用符号链接。
+也就是说，如果启用了这个预览功能，虚拟环境就会建立在 `#!bash $XDG_CACHE_HOME/uv` 内，然后可以回退到环境变量路径写入文件的操作，避免使用符号链接。
 
 因此在 `~/.bashrc` 中写入：
 
@@ -57,6 +57,65 @@ export UV_PREVIEW_FEATURES=centralized-project-envs
 ```
 
 就可以避免上述虚拟环境问题。以及，你肯定需要在[某一级 .gitignore](https://nelson.cloud/.gitignore-isnt-the-only-way-to-ignore-files-in-git/) 里面忽略掉 `/.venv`。
+
+注意到 .venv 用作重定向文件的形式是 [PEP 832](https://peps.python.org/pep-0832/) 规定的，而该 PEP 仍处于草案状态，所以其他工具很可能无法正确识别虚拟环境位置，例如 basedpyright 和 ty。
+
+这时需要手动配置其虚拟环境路径。为了避免被 Git 追踪，建议单独创建配置文件，而不使用 `pyproject.toml` 入口，还需要把 `pyproject.toml` 原有的配置同步一份到独立配置文件中。同时，需要在某一级 .gitignore 中忽略这些单独的配置文件，还需要在 uv 每次更新 .venv 指向的虚拟环境后同步修改这些文件。
+
+/// details | 示例
+
+假设 .venv 中的虚拟环境路径为 `/data/data/com.termux/files/home/.cache/uv/environments-v2/example-cp3.14.6-0123456789abcdef`，我们需要使用 basedpyright 和 ty（虽然考虑到功能重叠最好不要同时使用这两个）。
+
+basedpyright 使用 `pyrightconfig.json` 作为其独立配置文件。在其中写入：
+
+``` json
+{
+    "venvPath": "/data/data/com.termux/files/home/.cache/uv/environments-v2",
+    "venv": "example-cp3.14.6-0123456789abcdef"
+}
+```
+
+注意此处不可以用 `~` 或者环境变量代替 `venvPath` 前面的部分，basedpyright 不会自动展开。
+
+ty 使用 `ty.toml` 作为其独立配置文件。在其中写入：
+
+``` toml
+[environment]
+python = "/data/data/com.termux/files/home/.cache/uv/environments-v2/example-cp3.14.6-0123456789abcdef"
+```
+
+如果觉得不够直观，这个可以用 `~` 代替前面的部分，或者如果有 XDG 变量的话也可以用 `#!bash $XDG_CACHE_HOME`。
+
+如果 `pyproject.toml` 原来有以下配置：
+
+``` toml
+[tool.ty.rules]
+dynamic-function-decorator-return = "error"
+missing-type-argument = "error"
+possibly-unresolved-reference = "warn"
+unsound-return-statement = "error"
+```
+
+那么也需要在 `ty.toml` 写一遍，否则不会生效：
+
+``` toml
+[rules]
+dynamic-function-decorator-return = "error"
+missing-type-argument = "error"
+possibly-unresolved-reference = "warn"
+unsound-return-statement = "error"
+```
+
+最后，在 `.git/info/exclude` 中排除文件：
+
+``` plaintext
+pyrightconfig.json
+ty.toml
+```
+
+如果 .venv 中的路径变化了，就需要同步修改这两个文件。
+
+///
 
 除此以外，因为硬链接也弄不了，哪怕在 `~` 目录下也不行，所以在使用 `#!bash uv add` 时，uv 还会报以下警告：
 
@@ -83,6 +142,24 @@ warning: `/data/data/com.termux/files/home/.local/share/../bin` is not on your P
 运行 `#!bash uv tool update-shell` 即可。如果你在意 `~/.bashrc` 的整洁，可以去把前缀改成 `~/.local/share`，或者有定义过的话，`#!bash $XDG_DATA_HOME`。路径中间加 `../` 的语法是对的，可以解析。
 
 ## pnpm 安装
+
+情况在本文发布后发生了变化。
+
+首先在 12.3.4 版本，pnpm 被加入到 Termux Packages 中（<https://github.com/termux/termux-packages/commit/8c812100522ceb335a84b8da894cc6e621ed4602>），也就是它现在可以用 `#!bash pkg install pnpm` 直接安装了。
+
+然后在 [pnpm 12.4](https://pnpm.io/blog/releases/12.4)，官方提供了 Android 可执行文件，意味着 `#!bash npx get-pnpm` 和 `#!bash pnpm self-update` 也可用了。
+
+在 12.4.1 版本，他们还修了 `package-import-method` 存在的 bug，意味着安装项目依赖可以少加一个全局配置。在此版本还测试到，使用 POSIX 独立脚本也可以直接安装。
+
+因此目前我推荐的操作如下。
+
+使用 `#!bash pkg install pnpm` 安装，再运行 `#!bash pnpm setup` 配置环境变量。如果你设过 npm 的镜像就不用再给 pnpm 设了，否则需要 `#!bash pnpm config set registry https://registry.npmmirror.com`。
+
+安装项目依赖时，每个项目都需要运行 `#!bash pnpm config set --location project node-linker hoisted`，否则会报 `ERR_PNPM_PACKAGE_MANAGER_SYMLINK_FAILED`。如果该项目不使用 `pnpm-workspace.yaml` 文件，可以直接在某一级 .gitignore 忽略该文件；否则可能需要另想办法忽略，或者全项目组统一使用 hoisted 方法。
+
+原文当中没有提到的是，如 pangu、prettier 这样的可执行包，不能在项目级别安装，只能全局安装。无论作什么样的配置，都会报 `ERR_PNPM_CMD_SHIM_SYMLINK_BIN`。不过此类包一般也不需要在项目级别安装就是了。
+
+/// details | 原文
 
 考虑到 pnpm 12 已经发布，此处按 next-12 举例，且不保证 11 可以按相同的方法成功安装。
 
@@ -115,7 +192,7 @@ export PNPM_VERSION=next-12
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 ```
 
-这里推荐把它存成一个文件，需要用的时候直接 `#!bash bash pnpm_self.sh` 即可。为什么呢？
+这里推荐把它存成一个文件，需要用的时候直接 `#!bash bash pnpm-helper.sh` 即可。为什么呢？
 
 因为 `#!bash pnpm self-update` 还会报 `ERR_PNPM_BROKEN_PNPM_INSTALL`，升级也得用这个脚本。
 
@@ -134,5 +211,7 @@ pnpm config set --location project node-linker hoisted
 ```
 
 然后再 `#!bash pnpm i` 就不会出现任何问题了。我不清楚如果用 Git 协作的话这个应该怎么办。
+
+///
 
 好了这篇就这样，希望用 Termux 能用得开心顺手 :)
