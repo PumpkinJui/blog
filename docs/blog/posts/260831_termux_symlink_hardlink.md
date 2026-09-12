@@ -163,7 +163,7 @@ warning: `/data/data/com.termux/files/home/.local/share/../bin` is not on your P
 
 考虑到 pnpm 12 已经发布，此处按 next-12 举例，且不保证 11 可以按相同的方法成功安装。
 
-pnpm 根本不在 pkg 的仓库里面，所以没法直接安装。官网上给出的两种安装方法一种是用 npx，另一种是独立脚本。听上去 npx 要简单一点，但是：
+pnpm 根本不在 pkg 的仓库里面，所以没法直接安装。[官网](https://pnpm.io/installation)上给出的两种安装方法一种是用 npx，另一种是独立脚本。听上去 npx 要简单一点，但是：
 
 ``` shell-session
 $ npx get-pnpm next-12
