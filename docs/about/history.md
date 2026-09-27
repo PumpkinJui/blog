@@ -36,3 +36,6 @@
 - 05 月 18 日，注册顶级域名 `908878.xyz`，注册商为 Cloudflare，期限为九年。
 - 06 月 01 日，`pumpkinjui.com` 续费一年。
 - 06 月 08 日，开启 EdgeOne 全站缓存，节点缓存 TTL 为 30 天。
+- 09 月 27 日，`pumpkinjui.com` NS 迁移到 Cloudflare，并消除了此前 `@` 的重定向问题。  
+  同日，两个域名开启 DNSSEC，并修改了其他若干配置项，如 TLS 版本和 HTTPS 策略。
+  同日，向 Disroot 捐赠并提交 MX 申请，在 `pumpkinjui.com` 添加相应记录。
