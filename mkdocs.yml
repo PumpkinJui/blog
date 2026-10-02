@@ -70,6 +70,7 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {}
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem
