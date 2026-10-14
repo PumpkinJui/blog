@@ -167,7 +167,7 @@ extra:
       link: https://github.com/PumpkinJui
       name: GitHub
     - icon: material/email-outline
-      link: about/contact.md
+      link: about/contact.html
       name: Email
   tags:
     AI: ai
