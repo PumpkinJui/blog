@@ -63,6 +63,7 @@ nav:
     - about/index.md
     - about/history.md
     - about/slogan.md
+    - about/contact.md
 markdown_extensions:
   - attr_list
   - footnotes
@@ -166,7 +167,7 @@ extra:
       link: https://github.com/PumpkinJui
       name: GitHub
     - icon: material/email-outline
-      link: mailto:blog@pumpkinjui.aleeas.com
+      link: about/contact.md
       name: Email
   tags:
     AI: ai

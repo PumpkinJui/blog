@@ -40,4 +40,5 @@
   同日，两个域名开启 DNSSEC，并修改了其他若干配置项，如 TLS 版本和 HTTPS 策略。  
   同日，向 Disroot 捐赠并提交 MX 申请，在 `pumpkinjui.com` 添加相应记录。
 - 10 月 13 日晚，Disroot 通过上述申请。
-- 10 月 14 日凌晨，添加 DKIM 记录，并修改 DMARC 记录为 quarantine。
+- 10 月 14 日凌晨，添加 DKIM 记录，并修改 DMARC 记录为 quarantine。  
+  同日晚，修改联络方式及其呈现方法。
