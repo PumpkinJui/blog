@@ -1,0 +1,9 @@
+@import url("https://fontsapi.zeoseven.com/993/main/result.css");
+@import url("https://fontsapi.zeoseven.com/993/italic/result.css");
+@import url("https://fontsapi.zeoseven.com/994/main/result.css");
+@import url("https://fontsapi.zeoseven.com/994/italic/result.css");
+
+:root {
+  --md-text-font: "LXGW Bright";
+  --md-code-font: "LXGW Bright Code";
+}

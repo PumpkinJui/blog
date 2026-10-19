@@ -178,3 +178,5 @@ extra:
     朴树: pushu
     人际: relations
     音乐: music
+extra_css:
+  - stylesheets/extra.css

@@ -11,7 +11,7 @@
 - 04 月 05 日，blog 被命名为「PumpkinJui’s 自留地」。
 - 06 月 18 日，注册顶级域名 `pumpkinjui.com`，注册商为 DNSPod，期限为一年。
 - 06 月 21 日，Cloudflare Pages 站点被 CNAME 到 `cfp` 记录。
-- 07 月 16 日，blog 新名「楠瓜室」被潘振东提出。
+- 07 月 16 日，blog 新名「楠瓜室」被提出。
 - 08 月 05 日，域名 ICP 备案以新名提交审核。
 - 08 月 08 日，域名 ICP 备案管局审核通过，备案号为「蒙 ICP 备 2025029368 号 - 1」。  
   同日，域名接入 EdgeOne 全球服务区。  
@@ -42,3 +42,5 @@
 - 10 月 13 日晚，Disroot 通过上述申请。
 - 10 月 14 日凌晨，添加 DKIM 记录，并修改 DMARC 记录为 quarantine。  
   同日晚，修改联络方式及其呈现方法。
+- 10 月 19 日，设置了 LXGW Bright 系列字体，使用正文 <https://github.com/lxgw/LxgwBright> 和等宽 <https://github.com/lxgw/LxgwBright-Code>，支持正体和斜体，字重 400，由 [ZSFT](https://fonts.zeoseven.com/) 分发。  
+  在字重上，这是一个不完美的实现。Code Regular 中文对应 Bright Medium，且受限于字体、ZSFT 和 SSG，无法引入粗体字重。
