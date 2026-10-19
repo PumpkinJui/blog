@@ -139,6 +139,8 @@ plugins:
   - offline
   - privacy:
       enabled: !ENV [CI, false]
+      assets_exclude:
+        - fontsapi.zeoseven.com/*
   - social:
       enabled: !ENV [CI, false]
       cards_layout_options:
