@@ -43,4 +43,5 @@
 - 10 月 14 日凌晨，添加 DKIM 记录，并修改 DMARC 记录为 quarantine。  
   同日晚，修改联络方式及其呈现方法。
 - 10 月 19 日，设置了 LXGW Bright 系列字体，使用正文 <https://github.com/lxgw/LxgwBright> 和等宽 <https://github.com/lxgw/LxgwBright-Code>，支持正体和斜体，字重 400，由 [ZSFT](https://fonts.zeoseven.com/) 分发。  
-  在字重上，这是一个不完美的实现。Code Regular 中文对应 Bright Medium，且受限于字体、ZSFT 和 SSG，无法引入粗体字重。
+  在字重上，这是一个不完美的实现。Code Regular 中文对应 Bright Medium，且受限于字体、ZSFT 和 SSG，无法引入粗体字重。  
+  同日，添加了 LaTeX 支持。

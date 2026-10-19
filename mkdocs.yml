@@ -141,6 +141,7 @@ plugins:
       enabled: !ENV [CI, false]
       assets_exclude:
         - fontsapi.zeoseven.com/*
+        - cdn.jsdmirror.com/npm/mathjax@3/*
   - social:
       enabled: !ENV [CI, false]
       cards_layout_options:
@@ -182,3 +183,6 @@ extra:
     音乐: music
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdmirror.com/npm/mathjax@3/es5/tex-mml-chtml.js
