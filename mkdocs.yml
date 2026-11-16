@@ -12,6 +12,7 @@ copyright: |
 repo_url: https://github.com/PumpkinJui/blog/
 theme:
   name: material
+  custom_dir: overrides
   features:
     - content.code.annotate
     - content.code.copy
@@ -184,8 +185,4 @@ extra:
     人际: relations
     音乐: music
 extra_css:
-  - https://fontsapi.zeoseven.com/993/main/result.css
-  - https://fontsapi.zeoseven.com/993/italic/result.css
-  - https://fontsapi.zeoseven.com/994/main/result.css
-  - https://fontsapi.zeoseven.com/994/italic/result.css
   - stylesheets/extra.css
