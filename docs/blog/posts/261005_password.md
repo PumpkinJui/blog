@@ -14,6 +14,9 @@ categories:
 
 <!-- more -->
 
+<script src="/javascripts/mathjax.js" async></script>
+<script src="https://cdn.jsdmirror.com/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
 ## Bitwarden
 
 > The most obvious example is user accounts. In most cases, I, as a user, don’t need an account. Yet programs keep insisting that I, not them, “need” one.

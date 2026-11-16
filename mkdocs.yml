@@ -71,7 +71,9 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
-      slugify: !!python/object/apply:pymdownx.slugs.slugify {}
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem
@@ -182,7 +184,8 @@ extra:
     人际: relations
     音乐: music
 extra_css:
+  - https://fontsapi.zeoseven.com/993/main/result.css
+  - https://fontsapi.zeoseven.com/993/italic/result.css
+  - https://fontsapi.zeoseven.com/994/main/result.css
+  - https://fontsapi.zeoseven.com/994/italic/result.css
   - stylesheets/extra.css
-extra_javascript:
-  - javascripts/mathjax.js
-  - https://cdn.jsdmirror.com/npm/mathjax@3/es5/tex-mml-chtml.js
