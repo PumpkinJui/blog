@@ -15,7 +15,7 @@ categories:
 <!-- more -->
 
 <script src="/javascripts/mathjax.js" async></script>
-<script src="https://cdn.jsdmirror.com/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<script src="https://cdn.jsdmirror.com/npm/mathjax@4/tex-mml-chtml.js" async></script>
 
 ## Bitwarden
 
